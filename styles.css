@@ -247,12 +247,14 @@ nav {
 }
 
 .projects__card {
+  
   overflow: hidden;
   border-radius: 1rem;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .projects__card img {
+  height: 265px;
   transition: 0.5s;
 }
 
