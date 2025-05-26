@@ -1,0 +1,98 @@
+[
+  {
+    "title": "BoxMate",
+    "description": "Equipment Selection System",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "Tool"],
+    "link": "https://msmelok.github.io/box-mate/"
+  },
+  {
+    "title": "ClipMate",
+    "description": "Clipboard Manager",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "Productivity"],
+    "link": "https://msmelok.github.io/clipmate/index.html"
+  },
+  {
+    "title": "TimeZone Converter",
+    "description": "USA to CLT Timezones converter",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "Timezone API"],
+    "link": "https://msmelok.github.io/convert/"
+  },
+  {
+    "title": "Tech Documentation Assistant",
+    "description": "Formatter Tool for technical documentation",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "Formatter"],
+    "link": "https://msmelok.github.io/doc/"
+  },
+  {
+    "title": "Tech Support Dashboard",
+    "description": "Dashboard for Optimum USA support agents",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "Dashboard"],
+    "link": "https://msmelok.github.io/doct/"
+  },
+  {
+    "title": "WhatsApp Quick Message",
+    "description": "Chat without saving phone numbers",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "WhatsApp API"],
+    "link": "https://msmelok.github.io/finder/"
+  },
+  {
+    "title": "FindMe QR Code",
+    "description": "Digital Contact Card via QR code",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "QR Generator"],
+    "link": "https://msmelok.github.io/findmeqr/"
+  },
+  {
+    "title": "Gaza War Counter",
+    "description": "War Day Counter with statistics",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "Counter"],
+    "link": "https://msmelok.github.io/gaza/"
+  },
+  {
+    "title": "Mega NetCafe & Repair",
+    "description": "Internet Cafe website with services",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "Business Site"],
+    "link": "https://msmelok.github.io/mega/"
+  },
+  {
+    "title": "Optimum Stream Mimic",
+    "description": "Agent Training simulation tool",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "Training"],
+    "link": "https://msmelok.github.io/opt-stream/"
+  },
+  {
+    "title": "XO Game",
+    "description": "Multiplayer Tic-Tac-Toe game",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "Game"],
+    "link": "https://msmelok.github.io/xo/"
+  },
+  {
+    "title": "Custom 404 Page",
+    "description": "Maintenance Page with animations",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "Error Page"],
+    "link": "https://msmelok.github.io/freediving-hurgada-404/"
+  },
+  {
+    "title": "Vet Corner Clinic",
+    "description": "Veterinary clinic website",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "Medical"],
+    "link": "https://msmelok.github.io/vetcorner/"
+  },
+  {
+    "title": "R4 Trainer Store",
+    "description": "FLiNG Trainers e-commerce site",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "E-commerce"],
+    "link": "https://msmelok.github.io/trainerstore/"
+  },
+  {
+    "title": "Plastic Plus Group",
+    "description": "Factory website for plastic products",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "Industrial"],
+    "link": "https://msmelok.github.io/plastic-plus/"
+  },
+  {
+    "title": "Avaya TN Book",
+    "description": "Avaya TN Helper (Deprecated)",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "Telephony"],
+    "link": "https://msmelok.github.io/tn/"
+  }
+]

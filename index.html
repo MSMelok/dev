@@ -1,782 +1,447 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Muhammad Meluk</title>
-  <link rel="shortcut icon" href="./assets/images/192x192.png" type="image/x-icon">
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Meluk | Web Developer</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="=Front-End Developer and Founder of MelokMade Innovations, with experience in technical support and web apps development using HTML, CSS, and Vanilla JavaScript.">
+    <meta name="keywords" content="Muhammad Meluk, msmelok, Web Developer, Portfolio, HTML, CSS, JavaScript, Technical Support, Egypt, Alexandria">
+    <meta name="author" content="Muhammad Meluk">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Muhammad Meluk | Web Developer">
+    <meta property="og:description" content="Explore the web development projects and services of Muhammad Meluk.">
+    <meta property="og:image" content="https://msmelok.github.io/dev/avatar.png">
+    <meta property="og:url" content="https://msmelok.github.io/dev">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Muhammad Meluk | Web Developer">
+    <meta name="twitter:description" content="Explore the web development projects and services of Muhammad Meluk.">
+    <meta name="twitter:image" content="https://msmelok.github.io/dev/avatar.png">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./avatar.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
-  <main>
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Muhammad Meluk" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Muhammad Meluk">Muhammad Meluk</h1>
-
-          <p class="title">Multi-Talented Techie</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="avatar.png" alt="Muhammad Meluk" class="nav-avatar">
+                <span class="logo-text">msmelok</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#" class="nav-link resume-btn" id="download-resume">
+                    <i class="fas fa-download"></i> Resume
+                </a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
+    </nav>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-greeting">
+                        <span class="code-comment">function</span>
+                        <span class="greeting-text code-bracket">getStarted()</span>
+                        <span class="code-comment">{</span>
+                    </div>
+                    <h1 class="hero-name">
+                        <span class="code-syntax">I'm</span> <span class="name-highlight">Muhammad Meluk</span>
+                    </h1>
+                    <h2 class="hero-title"><span class="code-bracket">{</span> Founder of MelokMade Innovations <span class="code-bracket">};</span></h2>
+                    <div class="hero-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Alexandria, Egypt</span>
+                    </div>
+                    <p class="hero-description">
+                        Founder of MelokMade Innovations (Est. May 2025). Specializing in creating 
+                        affordable static websites with HTML, CSS, and JavaScript that blend functionality with great design.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn btn-primary">View More</a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://www.facebook.com/61575773733713" class="social-link" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://wa.me/201069377014" class="social-link" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://github.com/msmelok" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-avatar">
+                    <div class="avatar-container">
+                        <img src="avatar.png" alt="Muhammad Meluk Avatar" class="avatar-image">
+                        <div class="avatar-ring"></div>
+                    </div>
+                </div>
             </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-                <a href="mailto:mohammedmelok001@gmail.com" class="contact-link">
-                  <p>MohammedMelok001<br><span class="emailSpan">@gmail.com</span></p>
-                </a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+201022723804" class="contact-link">+20 102-272-3804</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="2001-05-11">May 11, 2001</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Alexandria, EGY</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://www.facebook.com/muhammad.salah.meluk" target="_blank" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
+        </div>
+        <div class="hero-scroll">
+            <a href="#about" class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
             </a>
-          </li>
+        </div>
+    </section>
 
-          <li class="social-item">
-            <a href="https://wa.me/201022723804" class="social-link">
-              <ion-icon name="logo-whatsapp"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://github.com/MSMelok" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-    <div class="main-content">
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I'm Muhammad Salah, a Web Developer specializing in HTML, CSS, and Vanilla JavaScript. With experience in customer service and technical support, I create user-friendly, responsive websites that blend functionality with great design. Always eager to learn and improve, I aim to build seamless digital experiences.
-          </p>
-        </section>
-
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What Can I Do?</h3>
-        
-          <ul class="service-list">
-        
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.png" alt="Design icon" width="40">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Design From Scratch</h4>
-                <p class="service-item-text">
-                  Craft modern and visually appealing designs.
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="code-comment">/* </span>About Me<span class="code-comment"> */</span>
+                </h2>
+                <p class="section-subtitle">
+                    <span class="code-bracket">{</span>
+                    Get to know more about my background and expertise
+                    <span class="code-bracket">};</span>
                 </p>
-              </div>
-            </li>
-        
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.png" alt="Web development icon" width="40">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Develop Live Projects</h4>
-                <p class="service-item-text">
-                  Enhance responsive websites optimized for user experience and functionality.
-                </p>
-              </div>
-            </li>
-        
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-solve.png" alt="Solve Problems icon" width="40">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Solve Problems</h4>
-                <p class="service-item-text">
-                  By Developing intuitive and scalable web-based applications tailored to fix.
-                </p>
-              </div>
-            </li>
-        
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-thinking.png" alt="thinking icon" width="40">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Critical Thinking</h4>
-                <p class="service-item-text">
-                  Analyzing complex situations and making logical decisions.
-                </p>
-              </div>
-            </li>
-        
-          </ul>
-        
-        </section>
-        
-        
-
-      </article>
-
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
             </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Technical Support Fundamentals</h4>
-              <span>Sep 9, 2022</span>
-              <p class="timeline-text">
-                Completed Google's course with a <strong>98.75%</strong> grade.
-                <a class="viewCertificateHyperlink" href="https://www.coursera.org/account/accomplishments/certificate/VRLVFG3EY9LB" target="_blank">
-                  <p>Click to View Certificate</p>
-                </a>
-              </p>
-            </li>
-          
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Getting Started with Python</h4>
-              <span>Nov 10, 2022</span>
-              <p class="timeline-text">
-                Completed the course from University of Michigan with a <strong>98.34%</strong> grade.
-                <a class="viewCertificateHyperlink" href="https://www.coursera.org/account/accomplishments/certificate/TW9GKDPR2S3Z" target="_blank">
-                  <p>Click to View Certificate</p>
-                </a>
-              </p>
-            </li>
-          
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Computer Networking</h4>
-              <span>Nov 23, 2022</span>
-              <p class="timeline-text">
-                Completed Google's course with a <strong>94.50%</strong> grade.
-                <a class="viewCertificateHyperlink" href="https://www.coursera.org/account/accomplishments/certificate/XT4CH9JRT6BV" target="_blank">
-                  <p>Click to View Certificate</p>
-                </a>
-              </p>
-            </li>
-          
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Introduction to Microsoft Excel</h4>
-              <span>Jul 5, 2023</span>
-              <p class="timeline-text">
-                Completed with a perfect <strong>100%</strong> grade.
-                <a class="viewCertificateHyperlink" href="https://www.coursera.org/account/accomplishments/certificate/22MW4P93UPP4" target="_blank">
-                  <p>Click to View Certificate</p>
-                </a>
-              </p>
-            </li>
-          
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Foundations of Cybersecurity</h4>
-              <span>Feb 10, 2024</span>
-              <p class="timeline-text">
-                Completed Google's course with a <strong>98.75%</strong> grade.
-                <a class="viewCertificateHyperlink" href="https://www.coursera.org/account/accomplishments/certificate/FZ2UNZJYCZCC" target="_blank">
-                  <p>Click to View Certificate</p>
-                </a>
-              </p>
-            </li>
-          
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">English Level Test (C1 Advanced)</h4>
-              <span>Aug 25, 2024</span>
-              <p class="timeline-text">
-                Achieved a C1 Advanced level in English based on the EF SET test.
-                <a class="viewCertificateHyperlink" href="https://cert.efset.org/k1q97e" target="_blank">
-                  <p>Click to View Certificate</p>
-                </a>
-              </p>
-            </li>
-          
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Commerce Diploma</h4>
-              <span>2022</span>
-              <p class="timeline-text">
-                Earned a local school diploma in Commerce.
-              </p>
-            </li>
-          
-          </ol>
-          
-
-        </section>
-<!--
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        I'm Muhammad Meluk, Founder of MelokMade Innovations - a software company established in May 2025. 
+                        We specialize in creating affordable static websites using HTML, CSS, and JavaScript. 
+                        With experience in technical support and web development, we deliver user-friendly, 
+                        responsive websites that blend functionality with great design at competitive prices.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">16+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">6</span>
+                            <span class="stat-label">Certificates Obtained</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">C1</span>
+                            <span class="stat-label">English Level</span>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <h3>Tech Stack</h3>
+                        <div class="tech-items">
+                            <span class="tech-item">HTML5</span>
+                            <span class="tech-item">CSS3</span>
+                            <span class="tech-item">JavaScript</span>
+                            <span class="tech-item">Python</span>
+                            <span class="tech-item">Responsive Design</span>
+                            <span class="tech-item">Technical Support</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
 
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Creative director</h4>
-
-              <span>2015 — Present</span>
-
-              <p class="timeline-text">
-                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
-                molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Art director</h4>
-
-              <span>2013 — 2015</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web designer</h4>
-
-              <span>2010 — 2013</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
--->
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Web Development</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Computer Skills</h5>
-                <data value="85">85%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">AI managment</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Projects</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-        
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-        
-            <li class="filter-item">
-              <button data-filter-btn>Web Application</button>
-            </li>
-        
-          </ul>
-        
-          <div class="filter-select-box">
-        
-            <button class="filter-select" data-select>
-        
-              <div class="select-value" data-selecct-value>Select category</div>
-        
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-        
-            </button>
-        
-            <ul class="select-list">
-        
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-        
-              <li class="select-item">
-                <button data-select-item>Web Application</button>
-              </li>
-        
-            </ul>
-        
-          </div>
-        
-          <ul class="project-list">
-        
-            <li class="project-item active" data-filter-item data-category="web application">
-              <a href="https://msmelok.github.io/box-mate/" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/boxMate-mock.jpeg" alt="BoxMate">
-                </figure>
-                <h3 class="project-title">BoxMate</h3>
-                <p class="project-category">Next-Generation Equipment Selection System</p>
-              </a>
-            </li>
-        
-            <li class="project-item active" data-filter-item data-category="web application">
-              <a href="https://msmelok.github.io/clipmate/" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/clipMate-mock.jpeg" alt="ClipMate">
-                </figure>
-                <h3 class="project-title">ClipMate</h3>
-                <p class="project-category">Modern Cloud-Based Clipboard Manager</p>
-              </a>
-            </li>
-        
-            <li class="project-item active" data-filter-item data-category="web application">
-              <a href="https://msmelok.github.io/convert/" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/coverter-mock.jpeg" alt="TimeZone Converter">
-                </figure>
-                <h3 class="project-title">TimeZone Converter</h3>
-                <p class="project-category">Convert USA Timezones to CLT</p>
-              </a>
-            </li>
-        
-            <li class="project-item active" data-filter-item data-category="web application">
-              <a href="https://msmelok.github.io/doc/" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/doc-mock.png" alt="Tech Documentation Assistant">
-                </figure>
-                <h3 class="project-title">Tech Documentation Assistant</h3>
-                <p class="project-category">Formats User Entry for Documentation</p>
-              </a>
-            </li>
-        
-            <li class="project-item active" data-filter-item data-category="web application">
-              <a href="https://msmelok.github.io/doct/" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/docT-mock.jpeg" alt="Tech Support Dashboard">
-                </figure>
-                <h3 class="project-title">Tech Support Dashboard</h3>
-                <p class="project-category">Quick Access for Optimum USA Agents</p>
-              </a>
-            </li>
-        
-            <li class="project-item active" data-filter-item data-category="web application">
-              <a href="https://msmelok.github.io/finder/" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/finder-mock.jpeg" alt="WhatsApp Quick Message">
-                </figure>
-                <h3 class="project-title">WhatsApp Quick Message</h3>
-                <p class="project-category">Send WhatsApp Messages Without Saving Numbers</p>
-              </a>
-            </li>
-        
-            <li class="project-item active" data-filter-item data-category="web application">
-              <a href="https://msmelok.github.io/findmeqr/" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/findMeQr-mock.jpeg" alt="FindMe QR Code">
-                </figure>
-                <h3 class="project-title">FindMe QR Code</h3>
-                <p class="project-category">Personal Contact Card with QR Code</p>
-              </a>
-            </li>
-        
-            <li class="project-item active" data-filter-item data-category="web application">
-              <a href="https://msmelok.github.io/gaza/" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/gaza-mock.jpeg" alt="Gaza War Counter">
-                </figure>
-                <h3 class="project-title">Gaza War Counter</h3>
-                <p class="project-category">Counting Days Since the War on Gaza Started</p>
-              </a>
-            </li>
-        
-            <li class="project-item active" data-filter-item data-category="web application">
-              <a href="https://msmelok.github.io/mega/" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/mega-mock.png" alt="Mega NetCafe & Repair">
-                </figure>
-                <h3 class="project-title">Mega NetCafe & Repair</h3>
-                <p class="project-category">Website for a NetCafe & Computer Repair Shop</p>
-              </a>
-            </li>
-        
-            <li class="project-item active" data-filter-item data-category="web application">
-              <a href="https://msmelok.github.io/opt-stream/" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/optimumStream-mock.jpeg" alt="Optimum Stream Mimic">
-                </figure>
-                <h3 class="project-title">Optimum Stream Mimic</h3>
-                <p class="project-category">Training Interface for Customer Service Agents</p>
-              </a>
-            </li>
-        
-            <li class="project-item active" data-filter-item data-category="web application">
-              <a href="https://msmelok.github.io/xo-game/" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/xo-mock.jpeg" alt="XO Game">
-                </figure>
-                <h3 class="project-title">XO Game</h3>
-                <p class="project-category">A Modern XO Game for Two Players</p>
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="web application">
-              <a href="https://msmelok.github.io/freediving-hurgada-404/" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/freedivingHurgada404-mock.jpeg" alt="404_Page_Project">
-                </figure>
-                <h3 class="project-title">404 - Not Found</h3>
-                <p class="project-category">a 404 page for times of Maintenance or Updates</p>
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="web application">
-              <a href="https://msmelok.github.io/hayah/" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/hayah-mock.jpeg" alt="Plastic Factory Website">
-                </figure>
-                <h3 class="project-title">Product Galary</h3>
-                <p class="project-category">a simple website to view products and contact information.</p>
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="web application">
-              <a href="https://msmelok.github.io/vetcorner/" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/vetCorner-mock.jpeg" alt="Vet Clinic Website">
-                </figure>
-                <h3 class="project-title">Vet Corner Clinic</h3>
-                <p class="project-category">a simple website for a vet clinic.</p>
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="web application">
-              <a href="https://msmelok.github.io/trainerstore/" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/trainerStore-mock.jpeg" alt="trainer Store">
-                </figure>
-                <h3 class="project-title">R4 Trainer Store</h3>
-                <p class="project-category">an underdevelopment trainer store for FLiNG trainers.</p>
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="web application">
-              <a href="https://msmelok.github.io/plastic-plus/" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/plasticPlus-mock.jpeg" alt="Plastic Group Website">
-                </figure>
-                <h3 class="project-title">Plastic Plus Group</h3>
-                <p class="project-category">a simple website to view products and contact information.</p>
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="web application">
-              <a href="https://msmelok.github.io/tn/" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/tn-mock.jpeg" alt="Avaya TN book">
-                </figure>
-                <h3 class="project-title">Avaya TN Book</h3>
-                <p class="project-category">a website was created to help the agents working with Avaya find a TN with an Extention but the software is retired now.</p>
-              </a>
-            </li>
-        
-          </ul>
-        
-        </section>
-        
-
-      </article>
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d218359.75267992678!2d29.790071832931194!3d31.22429939206376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c49126710fd3%3A0xb4e0cda629ee6bb9!2sAlexandria%2C%20Alexandria%20Governorate!5e0!3m2!1sen!2seg!4v1726912378332!5m2!1sen!2seg"
-              width="400" height="300"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="https://formspree.io/f/mpwagjak" method="POST" class="form" data-form>
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="code-comment">const </span>services<span class="code-comment"> = [</span>
+                </h2>
+                <p class="section-subtitle">
+                    <span class="code-bracket">{</span>
+                    What I can do for you
+                    <span class="code-bracket">};</span>
+                </p>
             </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <h3 class="service-title">Design From Scratch</h3>
+                    <p class="service-description">
+                        We create modern and visually appealing static website layouts 
+                        at affordable prices that capture your brand essence and provide exceptional user experience.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="service-title">Develop Live Projects</h3>
+                    <p class="service-description">
+                        We develop functional and responsive static websites that work seamlessly across 
+                        all devices and browsers at competitive prices that won't break your budget.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="service-title">Solve Problems</h3>
+                    <p class="service-description">
+                        MelokMade Innovations delivers scalable and intuitive static web solutions 
+                        that address real-world challenges with elegant, cost-effective solutions.
+                    </p>
+                </div>
+            </div>
+            <span class="code-comment" style="font-size: 32px;"> ];</span>
+        </div>
+    </section>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="code-comment">class </span>Education<span class="code-comment"> {</span>
+                </h2>
+                <p class="section-subtitle">
+                    <span class="code-bracket">{</span>
+                    Some of my learning journey and achievements
+                    <span class="code-bracket">};</span>
+                </p>
+            </div>
+            <div class="education-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Aug 2024</div>
+                    <div class="timeline-content">
+                        <h3>English Test (C1 Advanced)</h3>
+                        <p class="timeline-institution">EF SET</p>
+                        <p class="timeline-score">Score: C1</p>
+                        <a href="https://cert.efset.org/k1q97e" class="timeline-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> View Certificate
+                        </a>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Feb 2024</div>
+                    <div class="timeline-content">
+                        <h3>Foundations of Cybersecurity</h3>
+                        <p class="timeline-institution">Google</p>
+                        <p class="timeline-score">Score: 98.75%</p>
+                        <a href="https://www.coursera.org/account/accomplishments/certificate/FZ2UNZJYCZCC" class="timeline-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> View Certificate
+                        </a>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Jul 2023</div>
+                    <div class="timeline-content">
+                        <h3>Microsoft Excel</h3>
+                        <p class="timeline-institution">Coursera</p>
+                        <p class="timeline-score">Score: 100%</p>
+                        <a href="https://www.coursera.org/account/accomplishments/certificate/22MW4P93UPP4" class="timeline-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> View Certificate
+                        </a>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Nov 2022</div>
+                    <div class="timeline-content">
+                        <h3>Getting Started with Python</h3>
+                        <p class="timeline-institution">University of Michigan</p>
+                        <p class="timeline-score">Score: 98.34%</p>
+                        <a href="https://www.coursera.org/account/accomplishments/certificate/TW9GKDPR2S3Z" class="timeline-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> View Certificate
+                        </a>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Nov 2022</div>
+                    <div class="timeline-content">
+                        <h3>Computer Networking</h3>
+                        <p class="timeline-institution">Google</p>
+                        <p class="timeline-score">Score: 94.50%</p>
+                        <a href="https://www.coursera.org/account/accomplishments/certificate/XT4CH9JRT6BV" class="timeline-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> View Certificate
+                        </a>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Sep 2022</div>
+                    <div class="timeline-content">
+                        <h3>Technical Support Fundamentals</h3>
+                        <p class="timeline-institution">Google</p>
+                        <p class="timeline-score">Score: 98.75%</p>
+                        <a href="https://www.coursera.org/account/accomplishments/certificate/VRLVFG3EY9LB" class="timeline-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> View Certificate
+                        </a>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2022</div>
+                    <div class="timeline-content">
+                        <h3>Commerce Diploma</h3>
+                        <p class="timeline-institution">Local Institution</p>
+                        <p class="timeline-score">Graduated</p>
+                    </div>
+                </div>
+                <span class="code-comment" style="font-size: 32px;"> }</span>
+            </div>
+        </div>
+    </section>
 
-            <!-- Hidden fields for device info and location -->
-            <input type="hidden" name="deviceInfo" id="deviceInfo">
-            <input type="hidden" name="location" id="location">
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-          </form>
-        </section>
-
-      </article>
-
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">
+                <span class="code-comment">let </span>portfolio<span class="code-comment"> = {</span>
+            </h2>
+            <p class="section-subtitle">
+                <span class="code-bracket">{</span>
+                A showcase of my recent work and projects
+                <span class="code-bracket">};</span>
+            </p>
+        </div>
+        <div class="portfolio-grid" id="portfolio-grid">
+            <!-- Projects will be inserted here by JavaScript -->
+        </div>
+        <span class="code-comment" style="font-size: 32px;"> }</span>
     </div>
+</section>
 
-  </main>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="code-comment">function </span>contactMe()<span class="code-comment"> {</span>
+                </h2>
+                <p class="section-subtitle">
+                    <span class="code-bracket">{</span>
+                    Let's work together on your next project
+                    <span class="code-bracket">};</span>
+                </p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:MuhammadMeluk@gmail.com">MuhammadMeluk@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <a href="tel:+201069377014">+20 106-937-7014</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>WhatsApp</h3>
+                            <a href="https://wa.me/201069377014" target="_blank">+20 106-937-7014</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <span>Alexandria, Egypt</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7292348.919685081!2d25.580189399551582!3d26.817130447955442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14368976c35c36e9%3A0x2c45a00925c4c444!2sEgypt!5e0!3m2!1sen!2seg!4v1748254265740!5m2!1sen!2seg" 
+                        width="100%" 
+                        height="350" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Alexandria, Egypt Location">
+                    </iframe>
+                </div>
+            </div>
+            <span class="code-comment" style="font-size: 32px;"> }</span>
+        </div>
+    </section>
 
-  <script src="./assets/js/script.js"></script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <img src="avatar.png" alt="Muhammad Meluk" class="footer-avatar">
+                        <span class="footer-brand">
+                            <span class="code-comment">href=</span>
+                            <span class="code-bracket">"</span><a href="https://github.com/msmelok" target="_blank">github.com/msmelok</a><span class="code-bracket">"</span>
+                        </span>
+                    </div>
+                    <span class="footer-text">
+                        <span class="code-comment">/* </span>© 2024 Muhammad Meluk. All rights reserved.<span class="code-comment"> */</span>
+                    </span>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-code">
+                        <span class="code-comment">return {</span>
+                    </div>
+                    <div class="footer-social-container">
+                        <a href="https://www.facebook.com/61575773733713" class="footer-social" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://wa.me/201069377014" class="footer-social" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://github.com/msmelok" class="footer-social" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="footer-code">
+                        <span class="code-comment">};</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
+    <script src="./script.js"></script>
 </body>
-
 </html>
