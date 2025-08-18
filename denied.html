@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Denied - MSM Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            color: #f8fafc;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.6;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 20% 80%, rgba(239, 68, 68, 0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 20%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 40% 40%, rgba(34, 197, 94, 0.05) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+            padding: 2rem;
+            text-align: center;
+            max-width: 625px;
+            margin: 0 auto;
+        }
+
+        .icon-container {
+            margin-bottom: 2rem;
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        .lock-icon {
+            width: 64px;
+            height: 64px;
+            color: #ef4444;
+        }
+
+        .main-heading {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #ef4444;
+            margin-bottom: 1rem;
+            letter-spacing: -0.025em;
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: #cbd5e1;
+            margin-bottom: 2rem;
+            animation: fadeInUp 0.8s ease-out 0.4s both;
+        }
+
+        .dynamic-content {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 2.5rem;
+            backdrop-filter: blur(10px);
+            animation: fadeInUp 0.8s ease-out 0.6s both;
+        }
+
+        .project-info {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .domain-info {
+            font-size: 1rem;
+            color: #94a3b8;
+        }
+
+        .highlight {
+            color: #60a5fa;
+            font-weight: 600;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 3rem;
+            animation: fadeInUp 0.8s ease-out 0.8s both;
+        }
+
+        .btn {
+            padding: 0.875rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            min-width: 160px;
+            justify-content: center;
+        }
+
+        .btn-primary {
+            background: #3b82f6;
+            color: white;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary:hover {
+            background: #2563eb;
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: #f8fafc;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            transition: all 0.2s ease;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: rgba(255, 255, 255, 0.3);
+            transform: translateY(-1px);
+        }
+
+        .footer {
+            padding: 2rem;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            animation: fadeIn 1s ease-out 1s both;
+            margin-top: auto;
+        }
+
+        .footer-text {
+            font-size: 0.875rem;
+            color: #64748b;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .developer-name {
+            color: #60a5fa;
+            font-weight: 600;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1.5rem;
+            }
+
+            .main-heading {
+                font-size: 2.5rem;
+            }
+
+            .subtitle {
+                font-size: 1.125rem;
+            }
+
+            .lock-icon {
+                width: 60px;
+                height: 60px;
+            }
+
+            .button-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 280px;
+            }
+
+            .dynamic-content {
+                padding: 1.25rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .main-heading {
+                font-size: 2rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            .footer {
+                padding: 1.5rem;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Loading states */
+        .loading {
+            color: #94a3b8;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Icon -->
+        <div class="icon-container">
+            <!-- Heroicons Lock Closed Icon -->
+            <svg class="lock-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+            </svg>
+        </div>
+
+        <!-- Main Heading -->
+        <h1 class="main-heading">Access Denied</h1>
+
+        <!-- Subtitle -->
+        <p class="subtitle">You don't have permission to view this project on this domain.</p>
+
+        <!-- Dynamic Content -->
+        <div class="dynamic-content">
+            <div class="project-info">
+                Project: <span class="highlight" id="project-name">Loading...</span>
+            </div>
+            <div class="domain-info">
+                Domain: <span class="highlight" id="domain-name">Loading...</span>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="button-container">
+            <button class="btn btn-secondary" onclick="goBack()">
+                <!-- Heroicons Arrow Left Icon -->
+                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                </svg>
+                Go Back
+            </button>
+            <a class="btn btn-primary" href="#" id="contact-link">
+                <!-- Heroicons Mail Icon -->
+                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                </svg>
+                Contact Developer
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer-text">
+            This project is owned and maintained by 
+            <span class="developer-name">Muhammad Meluk</span>.
+            <br> 
+            Unauthorized access is not permitted.
+        </p>
+    </footer>
+
+    <script>
+        // Function to get URL query parameters
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Function to safely display text content
+        function setTextContent(elementId, content, fallback = 'Not specified') {
+            const element = document.getElementById(elementId);
+            if (element) {
+                element.textContent = content || fallback;
+            }
+        }
+
+        // Function to go back in browser history
+        function goBack() {
+            if (window.history.length > 1) {
+                window.history.back();
+            } else {
+                // Fallback if no history available
+                window.location.href = '/';
+            }
+        }
+
+        // Function to generate contact email link
+        function generateContactLink(projectName, domainName) {
+            const email = 'MuhammadMeluk@gmail.com';
+            const subject = encodeURIComponent(`Access Request – ${projectName || 'MSM Portfolio'}`);
+            const body = encodeURIComponent(
+                `Hello Muhammad,\n\n` +
+                `I am requesting access to the project "${projectName || 'MSM Portfolio'}" ` +
+                `from domain "${domainName || window.location.hostname}".\n\n` +
+                `Please let me know the requirements for access.\n\n` +
+                `Thank you,`
+            );
+            
+            return `mailto:${email}?subject=${subject}&body=${body}`;
+        }
+
+        // Initialize page content when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get query parameters
+            const projectName = getQueryParam('project');
+            const domainName = getQueryParam('domain') || window.location.hostname;
+
+            // Update dynamic content
+            setTextContent('project-name', projectName, 'MSM Portfolio');
+            setTextContent('domain-name', domainName, window.location.hostname);
+
+            // Update contact link
+            const contactLink = document.getElementById('contact-link');
+            if (contactLink) {
+                contactLink.href = generateContactLink(projectName, domainName);
+            }
+
+            // Add keyboard navigation support
+            document.addEventListener('keydown', function(event) {
+                // ESC key to go back
+                if (event.key === 'Escape') {
+                    goBack();
+                }
+                // Enter key on contact link
+                if (event.key === 'Enter' && event.target.id === 'contact-link') {
+                    event.target.click();
+                }
+            });
+        });
+
+        // Add smooth scroll behavior for better UX
+        if ('scrollBehavior' in document.documentElement.style) {
+            document.documentElement.style.scrollBehavior = 'smooth';
+        }
+
+        // Removed auto-focus to prevent unwanted outline on page load
+
+        // Error handling for mailto links
+        document.getElementById('contact-link')?.addEventListener('click', function(event) {
+            try {
+                // The mailto link will be handled by the browser
+                // This is just to ensure no JavaScript errors occur
+                console.log('Opening email client...');
+            } catch (error) {
+                console.error('Error opening email client:', error);
+                // Fallback: copy email to clipboard if possible
+                if (navigator.clipboard) {
+                    navigator.clipboard.writeText('MuhammadMeluk@gmail.com').then(function() {
+                        alert('Email address copied to clipboard: MuhammadMeluk@gmail.com');
+                    });
+                }
+            }
+        });
+    </script>
+</body>
+</html>
